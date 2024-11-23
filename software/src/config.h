@@ -52,8 +52,7 @@
 #define DOORBELL_AUDIO_PLAY_COUNT       1               /* Play audio file multiple times */
 #define DOORBELL_AUDIO_PLAY_DELAY_MS    1000            /* Play audio file multiple times with delay */
 #define DOORBELL_AUDIO_GAIN             1.0f
-/* Input 14 is broken */
-#define DOORBELL_SWITCH_PIN             12              /* GPIO pin or -1 to disable switch input */
+#define DOORBELL_SWITCH_PIN             16              /* GPIO pin or -1 to disable switch input */
 #define ENABLE_DOORBELL_I2S_DAC         1
 #define DOORBELL_HISTORY_LENGTH         32             /* Last 32 button press will be stored and displayed on index page */
 #endif
@@ -88,7 +87,7 @@
 #if ENABLE_HTTP_AUTH
 #define MAX_AUTH_PAGES                  16
 #define HTTP_AUTH_USERNAME              "admin"
-#define HTTP_AUTH_PASSWORD              "pass"
+#define HTTP_AUTH_PASSWORD              "pass123"
 #endif
 
 #endif /* INCLUDE_CONFIG_H_ */

@@ -1,1 +1,1 @@
-/switches/doorbell-test/press
+/switches/doorbell-test2/press
