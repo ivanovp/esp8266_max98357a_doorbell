@@ -1,0 +1,5 @@
+doorbell.wav    ; Audio file name
+1               ; Audio play count
+1000            ; Delay between audio plays
+0.5             ; Audio gain
+
