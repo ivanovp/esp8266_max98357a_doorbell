@@ -319,19 +319,6 @@ void http_server_handle_admin_htm()
 #if ENABLE_FILE_TRACE
     buf += "<li><a href=\"/file_trace.htm\">/file_trace.htm</a> - Enable/disable file trace</li>";
 #endif
-#if ENABLE_REMOTE_CONTROL
-    buf += "<li><a href=\"/remote_control.htm?enter_learn_mode=1\">/remote_control.htm</a> - Enter learning mode</li>";
-#endif
-#if ENABLE_THERMOSTAT
-    buf += "<li><a href=\"/thermostat.htm\">/thermostat.htm</a> - Manual switch on/off of device</li>";
-#endif
-#if ENABLE_LED_MATRIX
-    buf += "<li><a href=\"/led_matrix_message.htm\">/led_matrix_message.htm</a> - Show message on LED matrix</li>";
-    buf += "<li><a href=\"/led_matrix_datetime.htm\">/led_matrix_datetime.htm</a> - Set date/time of LED matrix</li>";
-#endif
-#if ENABLE_RAW_OBIS
-    buf += "<li><a href=\"/obis_raw.txt\">/obis_raw.txt</a> - Latest raw OBIS data received from smart meter</li>";
-#endif
     buf += R"==(
 </ul>
 
