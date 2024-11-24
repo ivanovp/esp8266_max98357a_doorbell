@@ -38,7 +38,6 @@ PubSubClient mqttClient(wifiClient);
 
 uint32_t mqtt_connect_start_time = 0;
 String mqttTopic;
-String mqttSensorTopicPrefix;
 
 String mqttSwitchesTopicPrefix;
 #endif /* ENABLE_MQTT_CLIENT */
@@ -262,7 +261,7 @@ void setup(void)
     hostname = readStringFromFile("/hostname.txt");
     if (hostname.isEmpty())
     {
-        // allow to address the device by the given name e.g. http://sensor<MAC>
+        // allow to address the device by the given name e.g. http://doorbell<MAC>
         hostname = DEFAULT_HOSTNAME;
         String mac = WiFi.macAddress();
         TRACE("MAC: %s\n", mac.c_str());

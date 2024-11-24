@@ -23,11 +23,6 @@
 #define TRACE_FLAG_FILE     0x02u
 
 #define TRACE(...)          trace_printf(TRACE_FLAG_NORMAL, __VA_ARGS__)
-#if DISABLE_SENSOR_TRACE
-#define TRACES(...)
-#else
-#define TRACES(...)         trace_printf(TRACE_FLAG_NORMAL, __VA_ARGS__)
-#endif
 #define ERROR(...)          trace_printf(TRACE_FLAG_ERROR, __VA_ARGS__)
 #define FILE_TRACE(...)     trace_printf(TRACE_FLAG_FILE, __VA_ARGS__)
 

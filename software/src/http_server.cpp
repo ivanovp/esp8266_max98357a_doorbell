@@ -14,7 +14,7 @@
 #include <ESP8266WebServer.h>
 #include <ESP8266mDNS.h>
 // Example firmware upload via curl:
-// curl -F "image=@.pio/build/esp07/firmware.bin" http://sensor10c488.home/update.htm
+// curl -F "image=@.pio/build/esp07/firmware.bin" http://doorbell10c488.home/update.htm
 #include <ESP8266HTTPUpdateServer.h>
 
 #include "main.h"
@@ -324,7 +324,6 @@ void http_server_handle_admin_htm()
 
 <p>The following REST services are available:</p>
 <ul>
-  <li><a href="/sensor.json">/sensor.json</a> - Sensor readings: pressure, temperature, humidity</a></li>
   <li><a href="/sysinfo.json">/sysinfo.json</a> - Some system level information</a></li>
   <li><a href="/file_list.json">/file_list.json</a> - Array of all files</a></li>
 </ul>)==";
@@ -618,9 +617,6 @@ void http_server_handle_sysinfo_json()
 #endif
 #ifdef ENABLE_TRACE_MS_TIMESAMP
               "  , \"enableTraceMsTimestamp\": " TOSTR(ENABLE_TRACE_MS_TIMESAMP) "\n"
-#endif
-#ifdef DISABLE_SENSOR_TRACE
-              "  , \"disableSensorTrace\": " TOSTR(DISABLE_SENSOR_TRACE) "\n"
 #endif
               ;
     result += "  , \"traceToFileIsWorking\": " + String(trace_to_file_is_working()) + "\n";

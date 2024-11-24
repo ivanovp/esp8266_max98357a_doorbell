@@ -29,7 +29,6 @@
 #define UPLOAD_HTM      "/upload.htm"
 #define FILE_LIST_JSON  "/file_list.json"
 #define SYSINFO_JSON    "/sysinfo.json"
-#define SENSOR_JSON     "/sensor.json"
 
 #if ENABLE_DOORBELL
 #define DOORBELL_HTM "/doorbell.htm"

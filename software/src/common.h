@@ -52,13 +52,6 @@
 
 typedef char bool_t;
 
-#if DEBUG
-#define debugprintf(...)            Serial.printf(__VA_ARGS__)
-#else
-#define debugprintf(...)
-#endif
-#define verboseprintf(...)          if (config.verbose) Serial.printf(__VA_ARGS__)
-#define errorprintf(...)            Serial.printf("ERROR: "); serial.printf(__VA_ARGS__)
 
 #ifndef ENABLE_HTTP_SERVER
 #define ENABLE_HTTP_SERVER      1

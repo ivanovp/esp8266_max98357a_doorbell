@@ -42,7 +42,6 @@ extern PubSubClient mqttClient;
 extern uint32_t mqtt_connect_start_time;
 extern uint32_t mqtt_publish_start_time;
 extern uint32_t mqtt_publish_interval_sec;
-extern String mqttSensorTopicPrefix;
 extern String mqttSwitchesTopicPrefix;
 #endif
 
