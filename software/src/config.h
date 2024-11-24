@@ -21,7 +21,7 @@
 
 #define ENABLE_HTTP_SERVER      1   /* 1: enable HTTP server, 0: disable HTTP server */
 #define ENABLE_NTP_CLIENT       1   /* 1: enable NTP client, 0: disable NTP client */
-#define ENABLE_MQTT_CLIENT      1   /* 1: enable MQTT client, 0: disable MQTT client */
+#define ENABLE_MQTT_CLIENT      0   /* 1: enable MQTT client, 0: disable MQTT client */
 #define ENABLE_FIRMWARE_UPDATE  1   /* 1: enable firmware update through HTTP, 0: disable firmware update */
 #define ENABLE_RESET            1   /* 1: enable reset through HTTP, 0: disable reset */
 #define ENABLE_HTTP_AUTH        1   /* 1: enable user authentication through HTTP, 0: disable authentication */

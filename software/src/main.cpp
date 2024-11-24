@@ -373,9 +373,7 @@ uint8_t mqtt_task()
 // run the server...
 void loop(void)
 {
-#if ENABLE_MQTT_CLIENT
     uint8_t mqtt_flags = 0;
-#endif
 #if ENABLE_RESET
     uint32_t now;
 #endif
